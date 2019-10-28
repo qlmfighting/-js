@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<script type="text/javascript">
+
+while (true) {
+    var num=Number(prompt('请输入一个三位数'));
+          if(num<1000&num>=100){
+             var a=num%10;                  //个位数
+             var b=parseInt(num%100/10);    //十位数
+             var c=parseInt(num/100);       //百位数
+             }else {
+              alert('输入错误；');
+              continue;
+          }
+             if(num==a*a*a+b*b*b+c*c*c){
+                 alert(num+"是水仙花数");
+                 break;
+             }else {
+                 alert(num+"不是是水仙花数");
+                 break;
+             }
+
+            
+         }
+</script>
+</head>
+<body>
+</body>
+</html>
